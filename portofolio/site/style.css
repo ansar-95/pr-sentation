@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alata|Monoton&display=swap");
+#mainNav {
+  min-height: 56px;
+  background-color: #fff;
+}
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #64a19d;
+  border: 1px solid #64a19d;
+}
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+#mainNav .navbar-brand {
+  color: #161616;
+  font-weight: 700;
+  padding: 0.9rem 0;
+}
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+.section-1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.3) 0%,
+      rgba(22, 22, 22, 0.7) 75%,
+      #161616 100%
+    ),
+    url("../image/computer-336628_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.section-1 h2 {
+  color: white;
+  font-family: "Monoton", cursive;
+}
+.section-1 h1 {
+  color: white;
+}
+.section-1 p {
+  color: #fff;
+  font-size: 20px;
+}
+#competence .card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  background-color: #ff1e1e;
+  border-radius: 0.25rem;
+  opacity: 0.9;
+}
+#competence .titre {
+  font-size: 20px;
+  font-family: "Alata", sans-serif;
+  font-weight: bold;
+  color: #fbfcfc;
+}
+#competence .card-front {
+  transform: rotateY(0deg);
+}
+#competence .card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+#competence .card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+#competence .card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+#fin-page .bas-page {
+  height: 20vh;
+  background-color: #161616;
+}
+#fin-page .droit-auteur {
+  color: #fff;
+  font-family: "Alata", sans-serif;
+}

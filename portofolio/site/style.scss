@@ -1,0 +1,125 @@
+$black: #161616 !default;
+$primary: #64a19d !default;
+$white: #fff !default;
+
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata|Monoton&display=swap');
+
+#mainNav {
+    min-height: 56px;
+    background-color: $white;
+    .navbar-toggler {
+      font-size: 80%;
+      padding: 0.75rem;
+      color: $primary;
+      border: 1px solid $primary;
+      &:focus {
+        outline: none;
+      }
+    }
+    .navbar-brand {
+      color: $black;
+      font-weight: 700;
+      padding: .9rem 0;
+    }
+    .navbar-nav {
+      .nav-item {
+        &:hover {
+          color: fade(white, 80%);
+          outline: none;
+          background-color: transparent;
+        }
+        &:active,
+        &:focus {
+          outline: none;
+          background-color: transparent;
+        }
+      } 
+     }
+    }
+
+.section-1 {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, #{fade-out($black, .7)} 0%,#{fade-out($black, .3)} 75%,$black 100%), url("../image/computer-336628_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+    h2 {
+        color: white;
+        font-family: 'Monoton', cursive;
+    }
+    h1 {
+        color: white;
+    }
+
+    p{
+        color: #fff;
+        font-size: 20px;
+    }
+
+}
+
+#competence {
+  .card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    background-color: #FF1E1E;
+    border-radius: 0.25rem;
+    opacity: 0.9;
+  }
+  .titre {
+    font-size: 20px;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+    color: #FBFCFC;
+
+  }
+  
+  .card-front {
+    transform: rotateY(0deg);
+    
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+    
+  .card-flip:hover .card-back {
+    transform: rotateY(0deg);
+  }
+
+}
+
+#fin-page {
+  .bas-page {
+    height: 20vh;
+    background-color: $black;
+  }
+
+  .droit-auteur {
+    color: $white;
+    font-family: 'Alata', sans-serif;
+    
+  }
+}
+
+
+
+
